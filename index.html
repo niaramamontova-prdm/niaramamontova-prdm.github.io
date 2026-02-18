@@ -1,261 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
 <title>Niyara Mamontova | Technical Product Manager</title>
 
 <style>
-  :root{
-    --bg:#f6f7f9; --card:#fff; --text:#1f2328; --muted:#5b6169; --line:#e6e8eb;
-  }
-  body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); }
-  .wrap{ max-width:1100px; margin:0 auto; padding:0 20px 60px; }
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+}
 
-  /* BLOCK 1: cover */
-  .cover{
-    height:220px; border-bottom:1px solid var(--line);
-    background: url("assets/cover.jpg") center/cover no-repeat;
-  }
-  .hero{
-    background:var(--card); border:1px solid var(--line); border-radius:14px;
-    margin-top:-70px; padding:22px; display:grid; grid-template-columns:220px 1fr; gap:22px;
-  }
-  .avatar{
-    width:200px; height:200px; border-radius:12px; border:1px solid var(--line);
+.cover{
+    height:280px;
+    background:url("assets/cover.jpg") center/cover no-repeat;
+}
+
+.container{
+    width:1000px;
+    margin:-120px auto 50px auto;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+}
+
+.header{
+    display:flex;
+    gap:30px;
+}
+
+.avatar{
+    width:170px;
+    height:170px;
+    border-radius:10px;
     background:url("assets/avatar.jpg") center/cover no-repeat;
-  }
-  h1{ margin:0 0 6px; font-size:32px; }
-  .tag{ margin:0 0 14px; color:var(--muted); font-weight:600; }
-  .meta{ margin:0; color:var(--muted); line-height:1.7; }
-  .meta a{ color:inherit; text-decoration:none; border-bottom:1px dashed var(--line); }
-  .ok{ margin-top:10px; font-weight:600; }
+}
 
-  /* sections */
-  .section{ margin-top:34px; }
-  .section h2{ font-size:18px; margin:0 0 12px; display:flex; gap:10px; align-items:center; }
-  .rule{ height:1px; background:var(--line); margin:10px 0 18px; }
-  .card{
-    background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px;
-  }
+h1{margin:0;}
+h2{margin-top:40px;}
+h3{margin-top:25px;}
 
-  /* BLOCK 3: competencies (2 columns) */
-  .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-  .mini h3{ margin:0 0 10px; font-size:14px; }
-  ul{ margin:0; padding-left:18px; color:var(--muted); line-height:1.65; }
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
 
-  /* BLOCK 4: portfolio presentation thumbnails */
-  .thumbs{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
-  .thumb{
-    background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;
-  }
-  .thumb img{ width:100%; height:130px; object-fit:cover; display:block; }
-  .thumb .t{ padding:10px 10px 12px; font-size:13px; color:var(--muted); }
+.recommendations{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
 
-  /* click-to-open modal (lightbox) */
-  .modal{ position:fixed; inset:0; background:rgba(0,0,0,.65); display:none; align-items:center; justify-content:center; padding:20px; }
-  .modal img{ max-width:95vw; max-height:90vh; border-radius:12px; border:1px solid rgba(255,255,255,.2); }
-  .modal.show{ display:flex; }
+.rec-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
 
-  /* BLOCK 5: recommendations (no cover) */
-  .recs{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
-  .rec{
-    background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px;
-    min-height:160px;
-  }
-  .rec .name{ font-weight:700; font-size:13px; margin:0 0 6px; }
-  .rec .role{ color:var(--muted); font-size:12px; margin:0 0 10px; }
-  .rec .q{ color:var(--muted); font-size:12px; line-height:1.55; margin:0; }
+.rec-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
 
-  /* responsive */
-  @media (max-width: 980px){
-    .hero{ grid-template-columns:1fr; }
-    .avatar{ width:140px; height:140px; }
-    .thumbs{ grid-template-columns:repeat(2,1fr); }
-    .recs{ grid-template-columns:repeat(2,1fr); }
-    .grid2{ grid-template-columns:1fr; }
-  }
+ul{padding-left:18px;}
 </style>
 </head>
 
 <body>
 
-<!-- BLOCK 1 -->
 <div class="cover"></div>
-<div class="wrap">
-  <div class="hero">
-    <div class="avatar" aria-label="Profile photo"></div>
 
-    <div>
-      <h1>Niyara Mamontova</h1>
-      <p class="tag">Technical Product Manager | FinTech • SaaS • Identity • Payments • AI Platforms</p>
+<div class="container">
 
-      <p class="meta">
-        📍 Irvine, California<br>
-        📞 +1 (814) 852-8918<br>
-        ✉️ <a href="mailto:niara.mamontova@gmail.com">niara.mamontova@gmail.com</a><br>
-        🔗 <a href="https://linkedin.com/in/niaramamontova">linkedin.com/in/niaramamontova</a>
-      </p>
+<div class="card">
 
-      <div class="ok">✔ Fully authorized to work in the United States</div>
+<div class="header">
 
-      <div class="section">
-        <h2>Executive Profile</h2>
-        <div class="rule"></div>
-        <p class="meta">
-          Technical Product Manager with 15+ years of international experience delivering enterprise SaaS, fintech,
-          AI-driven underwriting, and regulated financial platforms across Europe and the United States.<br><br>
-          Specialized in high-scale commerce systems, identity & verification, subscription billing, and compliance-driven
-          financial technologies (PCI, SEC/FINRA). Focused on aligning business strategy with technical architecture to
-          drive measurable outcomes.
-        </p>
-      </div>
-    </div>
-  </div>
+<div class="avatar"></div>
 
-  <!-- BLOCK 2: Enterprise Snapshot -->
-  <div class="section card">
-    <h2>Enterprise Snapshot</h2>
-    <div class="rule"></div>
-    <ul>
-      <li>15+ years platform & product delivery</li>
-      <li>11M+ global users supported</li>
-      <li>~$300M SaaS commerce ecosystem</li>
-      <li>AI-driven underwriting & credit engines</li>
-      <li>PCI-compliant payment infrastructure</li>
-      <li>SEC/FINRA-regulated financial platforms</li>
-      <li>Multi-tenant ERP + CRM modernization</li>
-      <li>AWS cloud migration & data platforms</li>
-    </ul>
-  </div>
+<div>
+<h1>Niyara Mamontova</h1>
+<b>Technical Product Manager | FinTech • SaaS • Identity • Payments • AI Platforms</b>
 
-  <!-- BLOCK 3: Core Competencies (like your screenshot) -->
-  <div class="section card">
-    <h2>Core Competencies</h2>
-    <div class="rule"></div>
+<p>
+📍 Irvine, California<br>
+📞 +1 (814) 852-8918<br>
+✉️ niara.mamontova@gmail.com<br>
+🔗 linkedin.com/in/niaramamontova<br>
+✔ Fully authorized to work in the United States
+</p>
 
-    <div class="grid2">
-      <div class="mini">
-        <h3>Product & Platform Ownership</h3>
-        <ul>
-          <li>End-to-end roadmap ownership</li>
-          <li>PI & sprint planning</li>
-          <li>Backlog governance</li>
-          <li>KPI-driven prioritization</li>
-          <li>Cross-functional alignment</li>
-        </ul>
-      </div>
+</div>
+</div>
 
-      <div class="mini">
-        <h3>FinTech & Regulated Systems</h3>
-        <ul>
-          <li>AI underwriting workflows</li>
-          <li>Loan onboarding & credit decisioning</li>
-          <li>KYC / KYB / identity verification</li>
-          <li>AML & compliance logic</li>
-          <li>Regulatory workflow translation</li>
-        </ul>
-      </div>
+<hr>
 
-      <div class="mini">
-        <h3>Commerce & Payments</h3>
-        <ul>
-          <li>Checkout optimization</li>
-          <li>Billing lifecycle (pricing → reconciliation)</li>
-          <li>Subscription monetization</li>
-          <li>Stripe / PayPal / ACH integrations</li>
-          <li>PCI compliance</li>
-        </ul>
-      </div>
+<p>
+Hi, I’m Niara Mamontova, a Technical Product Manager with over 15 years of international experience delivering enterprise digital platforms across global e-commerce, fintech, AI-driven underwriting, and regulated financial environments in both Europe and the United States.
+</p>
 
-      <div class="mini">
-        <h3>Identity & Security</h3>
-        <ul>
-          <li>IAM modernization</li>
-          <li>OAuth 2.0 / 2FA</li>
-          <li>Consent & privacy controls</li>
-          <li>Fraud detection workflows</li>
-          <li>SLA & incident governance</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<p>
+I began my career as a Business Analyst, transitioned into Product Owner roles, and evolved into Product Manager leadership positions, giving me comprehensive, end-to-end expertise across the full product lifecycle.
+</p>
 
-  <!-- BLOCK 4: Presentation as screens (thumbnails) -->
-  <div class="section">
-    <div class="card">
-      <h2>Product Portfolio (Slides)</h2>
-      <div class="rule"></div>
-
-      <!-- Update filenames if needed -->
-      <div class="thumbs">
-        <div class="thumb"><img src="assets/portfolio/slide-1.png" alt="Slide 1" onclick="openModal(this.src)"><div class="t">Overview & Domains</div></div>
-        <div class="thumb"><img src="assets/portfolio/slide-2.png" alt="Slide 2" onclick="openModal(this.src)"><div class="t">Platform & Internal Products</div></div>
-        <div class="thumb"><img src="assets/portfolio/slide-3.png" alt="Slide 3" onclick="openModal(this.src)"><div class="t">Market Stats Walkthrough</div></div>
-        <div class="thumb"><img src="assets/portfolio/slide-4.png" alt="Slide 4" onclick="openModal(this.src)"><div class="t">Identity & Access Case</div></div>
-        <div class="thumb"><img src="assets/portfolio/slide-5.png" alt="Slide 5" onclick="openModal(this.src)"><div class="t">Monetization Workflows</div></div>
-        <div class="thumb"><img src="assets/portfolio/slide-6.png" alt="Slide 6" onclick="openModal(this.src)"><div class="t">Delivery Artifacts</div></div>
-        <div class="thumb"><img src="assets/portfolio/slide-7.png" alt="Slide 7" onclick="openModal(this.src)"><div class="t">Execution Evidence</div></div>
-        <div class="thumb"><img src="assets/portfolio/slide-8.png" alt="Slide 8" onclick="openModal(this.src)"><div class="t">Summary</div></div>
-      </div>
-
-      <!-- Optional: add a download link to the PPT -->
-      <p class="meta" style="margin-top:14px;">
-        Optional: add a downloadable PPT link (upload the PPT to the repo, then link it here).
-      </p>
-    </div>
-  </div>
-
-  <!-- BLOCK 5: Recommendations (small cards, no cover) -->
-  <div class="section">
-    <div class="card">
-      <h2>Recommendations</h2>
-      <div class="rule"></div>
-
-      <div class="recs">
-        <div class="rec">
-          <p class="name">Dino Morales (full recommendation available by request)</p>
-          <p class="role">Vice President — On-Line Residential</p>
-          <p class="q">“Niyara showcased remarkable leadership while navigating complex legacy systems…”</p>
-        </div>
-
-        <div class="rec">
-          <p class="name">Tetiana Vichkanova (full recommendation available by request)</p>
-          <p class="role">Delivery Project Manager — Namecheap</p>
-          <p class="q">“Niyara streamlined delivery processes and reduced release cycles…”</p>
-        </div>
-
-        <div class="rec">
-          <p class="name">Tara Chklovski (full recommendation available by request)</p>
-          <p class="role">Founder & CEO — Technovation</p>
-          <p class="q">“Strong analytical and organizational skills; requirements translated into effective solutions…”</p>
-        </div>
-
-        <div class="rec">
-          <p class="name">Dana Ross (full recommendation available by request)</p>
-          <p class="role">Architect — Capital Group</p>
-          <p class="q">“Excelled in requirements elicitation and stakeholder facilitation…”</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<p>
+I specialize in checkout optimization, identity & access management, subscription billing, AI-based credit decisioning, and compliance-driven system design across PCI and SEC/FINRA frameworks.
+</p>
 
 </div>
 
-<!-- modal -->
-<div class="modal" id="modal" onclick="closeModal()">
-  <img id="modalImg" alt="Slide preview">
+
+<div class="card">
+<h2>◆ Core Competencies</h2>
+
+<div class="grid-2">
+
+<div>
+<h3>Product & Platform Ownership</h3>
+<ul>
+<li>End-to-end roadmap ownership</li>
+<li>PI & sprint planning</li>
+<li>Backlog governance</li>
+<li>KPI-driven prioritization</li>
+<li>Multi-team coordination</li>
+<li>Cross-functional alignment</li>
+</ul>
+
+<h3>Commerce & Payments</h3>
+<ul>
+<li>Checkout optimization</li>
+<li>Billing lifecycle</li>
+<li>Subscription monetization</li>
+<li>Stripe, PayPal, ACH integrations</li>
+<li>PCI compliance</li>
+</ul>
+
+<h3>Cloud & Architecture Collaboration</h3>
+<ul>
+<li>AWS platforms</li>
+<li>API integrations</li>
+<li>Data flows & decision engines</li>
+<li>ERP / CRM modernization</li>
+<li>Multi-tenant SaaS architecture</li>
+</ul>
 </div>
 
-<script>
-  function openModal(src){
-    document.getElementById('modalImg').src = src;
-    document.getElementById('modal').classList.add('show');
-  }
-  function closeModal(){
-    document.getElementById('modal').classList.remove('show');
-  }
-</script>
+<div>
+<h3>FinTech & Regulated Systems</h3>
+<ul>
+<li>AI underwriting workflows</li>
+<li>Loan onboarding & credit decisioning</li>
+<li>KYC / KYB</li>
+<li>AML & compliance logic</li>
+<li>Regulatory workflow translation</li>
+</ul>
 
+<h3>Identity & Security</h3>
+<ul>
+<li>IAM modernization</li>
+<li>OAuth 2.0 / 2FA</li>
+<li>Fraud detection</li>
+<li>SLA & incident governance</li>
+</ul>
+
+<h3>Domains</h3>
+<ul>
+<li>FinTech & Banking</li>
+<li>AI & Decisioning Platforms</li>
+<li>E-commerce & Global SaaS</li>
+<li>Enterprise Platforms</li>
+<li>Regulated Financial Services</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+
+<div class="card">
+<h2>◆ Education</h2>
+
+<b>M.S. in Computer Science</b><br>
+Crimean Engineer & Pedagogical State University<br><br>
+
+<b>M.S. in International Business Management</b><br>
+Taurida National V.I. Vernadsky University
+
+<h2>◆ Certifications</h2>
+<ul>
+<li>CBAP® – IIBA</li>
+<li>PSPO I – Scrum.org</li>
+<li>PSM I – Scrum.org</li>
+<li>Atlassian Certified Agile Development with Jira</li>
+</ul>
+</div>
+
+
+<div class="card">
+<h2>◆ Recommendations</h2>
+
+<div class="recommendations">
+
+<div class="rec-card">
+<b>Dino Morales</b><br>
+Vice President — On-Line Residential
+<p>"Niyara showcased remarkable leadership navigating complex legacy systems."</p>
+</div>
+
+<div class="rec-card">
+<b>Tetiana Vichkanova</b><br>
+Delivery Project Manager — Namecheap
+<p>"Streamlined delivery processes and reduced release cycles."</p>
+</div>
+
+<div class="rec-card">
+<b>Dana Ross</b><br>
+Architect — Capital Group
+<p>"Excellent in requirements elicitation and stakeholder alignment."</p>
+</div>
+
+</div>
+</div>
+
+</div>
 </body>
 </html>
