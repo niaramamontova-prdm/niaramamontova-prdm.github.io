@@ -12,21 +12,21 @@ body{
 }
 
 .cover{
-    height:280px;
+    height:300px;
     background:url("assets/cover.jpg") center/cover no-repeat;
 }
 
 .container{
     width:1000px;
-    margin:-120px auto 50px auto;
+    margin:-130px auto 60px auto;
 }
 
 .card{
     background:white;
     padding:30px;
-    border-radius:12px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
-    margin-bottom:30px;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom:35px;
 }
 
 .header{
@@ -35,20 +35,34 @@ body{
 }
 
 .avatar{
-    width:170px;
-    height:170px;
-    border-radius:10px;
+    width:180px;
+    height:180px;
+    border-radius:12px;
     background:url("assets/avatar.jpg") center/cover no-repeat;
 }
 
 h1{margin:0;}
-h2{margin-top:40px;}
-h3{margin-top:25px;}
+h2{margin-top:10px;}
+h3{margin:0 0 10px 0;}
 
-.grid-2{
+hr{
+    border:none;
+    border-top:1px solid #e6e8eb;
+    margin:25px 0;
+}
+
+.skills-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.skill-tile{
+    background:#fff;
+    border:1px solid #e6e8eb;
+    border-radius:12px;
+    padding:18px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.06);
 }
 
 .recommendations{
@@ -60,17 +74,29 @@ h3{margin-top:25px;}
 .rec-card{
     background:white;
     padding:20px;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
     transition:0.3s;
 }
 
 .rec-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.15);
 }
 
-ul{padding-left:18px;}
+ul{
+    padding-left:18px;
+    margin:0;
+}
+
+.section-title{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:6px 0;
+}
 </style>
 </head>
 
@@ -80,6 +106,7 @@ ul{padding-left:18px;}
 
 <div class="container">
 
+<!-- HEADER -->
 <div class="card">
 
 <div class="header">
@@ -90,13 +117,13 @@ ul{padding-left:18px;}
 <h1>Niyara Mamontova</h1>
 <b>Technical Product Manager | FinTech • SaaS • Identity • Payments • AI Platforms</b>
 
-<p>
-📍 Irvine, California<br>
-📞 +1 (814) 852-8918<br>
-✉️ niara.mamontova@gmail.com<br>
-🔗 linkedin.com/in/niaramamontova<br>
-✔ Fully authorized to work in the United States
-</p>
+<div class="contact">
+<p>📍 Irvine, California</p>
+<p>📞 +1 (814) 852-8918</p>
+<p>✉️ niara.mamontova@gmail.com</p>
+<p>🔗 linkedin.com/in/niaramamontova</p>
+<p>✔ Fully authorized to work in the United States</p>
+</div>
 
 </div>
 </div>
@@ -112,18 +139,23 @@ I began my career as a Business Analyst, transitioned into Product Owner roles, 
 </p>
 
 <p>
-I specialize in checkout optimization, identity & access management, subscription billing, AI-based credit decisioning, and compliance-driven system design across PCI and SEC/FINRA frameworks.
+I specialize in checkout optimization, payment performance improvement, identity & access management, subscription billing infrastructure, AI-based credit decisioning, and compliance-driven system design across PCI and SEC/FINRA frameworks.
+</p>
+
+<p>
+I align business strategy with technical architecture to drive measurable growth, system resilience, regulatory compliance, and long-term platform scalability.
 </p>
 
 </div>
 
 
+<!-- CORE COMPETENCIES -->
 <div class="card">
-<h2>◆ Core Competencies</h2>
+<div class="section-title">◆ Core Competencies</div>
 
-<div class="grid-2">
+<div class="skills-grid">
 
-<div>
+<div class="skill-tile">
 <h3>Product & Platform Ownership</h3>
 <ul>
 <li>End-to-end roadmap ownership</li>
@@ -133,19 +165,23 @@ I specialize in checkout optimization, identity & access management, subscriptio
 <li>Multi-team coordination</li>
 <li>Cross-functional alignment</li>
 </ul>
+</div>
 
+<div class="skill-tile">
 <h3>Commerce & Payments</h3>
 <ul>
 <li>Checkout optimization</li>
-<li>Billing lifecycle</li>
+<li>Billing lifecycle (pricing → invoicing → reconciliation)</li>
 <li>Subscription monetization</li>
 <li>Stripe, PayPal, ACH integrations</li>
 <li>PCI compliance</li>
 </ul>
+</div>
 
+<div class="skill-tile">
 <h3>Cloud & Architecture Collaboration</h3>
 <ul>
-<li>AWS platforms</li>
+<li>AWS-based platforms</li>
 <li>API integrations</li>
 <li>Data flows & decision engines</li>
 <li>ERP / CRM modernization</li>
@@ -153,30 +189,37 @@ I specialize in checkout optimization, identity & access management, subscriptio
 </ul>
 </div>
 
-<div>
+<div class="skill-tile">
 <h3>FinTech & Regulated Systems</h3>
 <ul>
 <li>AI underwriting workflows</li>
 <li>Loan onboarding & credit decisioning</li>
-<li>KYC / KYB</li>
+<li>KYC / KYB / Identity verification</li>
 <li>AML & compliance logic</li>
 <li>Regulatory workflow translation</li>
 </ul>
+</div>
 
+<div class="skill-tile">
 <h3>Identity & Security</h3>
 <ul>
 <li>IAM modernization</li>
 <li>OAuth 2.0 / 2FA</li>
-<li>Fraud detection</li>
+<li>Consent & privacy controls</li>
+<li>Fraud detection workflows</li>
 <li>SLA & incident governance</li>
 </ul>
+</div>
 
+<div class="skill-tile">
 <h3>Domains</h3>
 <ul>
 <li>FinTech & Banking</li>
 <li>AI & Decisioning Platforms</li>
+<li>Identity & Verification Systems</li>
 <li>E-commerce & Global SaaS</li>
-<li>Enterprise Platforms</li>
+<li>Real Estate Technology</li>
+<li>Enterprise & Internal Platforms</li>
 <li>Regulated Financial Services</li>
 </ul>
 </div>
@@ -185,8 +228,9 @@ I specialize in checkout optimization, identity & access management, subscriptio
 </div>
 
 
+<!-- EDUCATION -->
 <div class="card">
-<h2>◆ Education</h2>
+<div class="section-title">◆ Education</div>
 
 <b>M.S. in Computer Science</b><br>
 Crimean Engineer & Pedagogical State University<br><br>
@@ -194,9 +238,14 @@ Crimean Engineer & Pedagogical State University<br><br>
 <b>M.S. in International Business Management</b><br>
 Taurida National V.I. Vernadsky University
 
-<h2>◆ Certifications</h2>
+</div>
+
+
+<!-- CERTIFICATIONS -->
+<div class="card">
+<div class="section-title">◆ Certifications</div>
 <ul>
-<li>CBAP® – IIBA</li>
+<li>CBAP® – International Institute of Business Analysis (IIBA)</li>
 <li>PSPO I – Scrum.org</li>
 <li>PSM I – Scrum.org</li>
 <li>Atlassian Certified Agile Development with Jira</li>
@@ -204,15 +253,16 @@ Taurida National V.I. Vernadsky University
 </div>
 
 
+<!-- RECOMMENDATIONS -->
 <div class="card">
-<h2>◆ Recommendations</h2>
+<div class="section-title">◆ Recommendations</div>
 
 <div class="recommendations">
 
 <div class="rec-card">
 <b>Dino Morales</b><br>
 Vice President — On-Line Residential
-<p>"Niyara showcased remarkable leadership navigating complex legacy systems."</p>
+<p>"Niyara showcased remarkable leadership while navigating complex legacy systems."</p>
 </div>
 
 <div class="rec-card">
