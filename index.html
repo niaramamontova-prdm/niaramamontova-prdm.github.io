@@ -1,116 +1,112 @@
-<!-- HERO CARD (white, rounded, photo on the right) -->
+<!-- COVER (dandelion) -->
 <div style="
   max-width: 1100px;
   margin: 0 auto;
+  height: 240px;
+  border-radius: 22px 22px 0 0;
+  background-image: url('cover.jpg');
+  background-size: cover;
+  background-position: center;
+">
+</div>
+
+<!-- WHITE CARD (overlapping the cover) -->
+<div style="
+  max-width: 1100px;
+  margin: -70px auto 0 auto;
   background: #ffffff;
   border-radius: 18px;
   padding: 28px 32px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
 ">
 
-  <div style="display: flex; gap: 32px; align-items: flex-start; justify-content: space-between;">
+  <!-- TOP ROW: AVATAR + NAME/TITLE + CONTACT -->
+  <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 24px;">
 
-    <!-- LEFT -->
-    <div style="flex: 1; min-width: 320px;">
-
-      <h1 style="margin: 0 0 6px 0;">Niara (Nia) Mamontova</h1>
-
-      <h2 style="margin: 0 0 6px 0;">Technical Product Manager</h2>
-
-      <h3 style="margin: 0 0 14px 0; font-weight: 500; color: #6B7280;">
-        Domains: FinTech • SaaS • Identity • Payments • AI Platforms
-      </h3>
-
-      <!-- CONTACT (small, grey) -->
-      <div style="color: #6B7280; font-size: 12px; line-height: 1.35; margin-top: 8px;">
-        📍 Irvine, California<br>
-        📞 +1 (814) 852-8918<br>
-        ✉️ niara.mamontova@gmail.com<br>
-        🔗 linkedin.com/in/niaramamontova<br>
-        ✔ Fully authorized to work in the United States
-      </div>
-
-      <!-- ABOUT ME TITLE -->
-      <div style="margin-top: 22px; font-size: 18px; font-weight: 700;">
-        About Me
-      </div>
-
-      <!-- ABOUT ME TEXT -->
-      <div style="margin-top: 10px; line-height: 1.65;">
-        Hi, I’m Niyara — a Technical Product Manager with over 15 years of experience building and modernizing complex digital platforms across fintech, SaaS, AI underwriting, e-commerce, and regulated financial environments.
-        I started my career as a Business Systems Analyst, moved into Product Ownership, and eventually grew into Principal Product Management roles. That journey gave me something I value deeply: strong systems thinking combined with practical execution.
-        I understand how things work under the hood — and how they need to work for the business.
-        I’m most comfortable in complex environments where architecture, compliance, and product strategy intersect.
-        I’ve led legacy-to-cloud migrations (AWS), helped design API-first platforms, worked on identity and payment systems supporting millions of users, and partnered closely with engineering, compliance, finance, and executive teams to bring clarity to high-risk, high-impact initiatives.
-        What drives me most is turning complexity into structure — translating financial and operational workflows into scalable, production-ready systems.
-        I enjoy building platforms that are not only functional, but resilient, measurable, and aligned with long-term business goals.
-        I do my best work where modernization, regulatory discipline, and execution excellence need to coexist.
-      </div>
-
+    <!-- AVATAR -->
+    <div style="flex: 0 0 120px;">
+      <img src="avatar.jpg" alt="Avatar"
+        style="width: 120px; height: 120px; border-radius: 16px; object-fit: cover;">
     </div>
 
-    <!-- RIGHT (PHOTO) -->
-    <div style="flex: 0 0 360px; text-align: right;">
-      <img
-        src="avatar.jpg"
-        alt="Profile photo"
-        style="
-          width: 100%;
-          max-width: 360px;
-          border-radius: 16px;
-          object-fit: cover;
-          box-shadow: 0 12px 28px rgba(0,0,0,0.10);
-        "
-      >
+    <!-- NAME/TITLE/DOMAINS -->
+    <div style="flex: 1; min-width: 280px;">
+      <h1 style="margin: 0 0 6px 0;">Niara (Nia) Mamontova</h1>
+      <h2 style="margin: 0 0 6px 0;">Technical Product Manager</h2>
+      <h3 style="margin: 0; font-weight: 500; color: #6B7280;">
+        Domains: FinTech • SaaS • Identity • Payments • AI Platforms
+      </h3>
+    </div>
+
+    <!-- CONTACT (RIGHT, SMALL, GREY) -->
+    <div style="flex: 0 0 260px; text-align: right; color: #6B7280; font-size: 12px; line-height: 1.35;">
+      📍 Irvine, California<br>
+      📞 +1 (814) 852-8918<br>
+      ✉️ niara.mamontova@gmail.com<br>
+      🔗 linkedin.com/in/niaramamontova<br>
+      ✔ Fully authorized to work in the United States
     </div>
 
   </div>
 
+  <!-- ABOUT ME -->
+  <div style="margin-top: 22px;">
+    <div style="font-size: 18px; font-weight: 700; margin-bottom: 10px;">About Me</div>
+
+    <div style="line-height: 1.65;">
+      Hi, I’m Niyara — a Technical Product Manager with over 15 years of experience building and modernizing complex digital platforms across fintech, SaaS, AI underwriting, e-commerce, and regulated financial environments.
+      I started my career as a Business Systems Analyst, moved into Product Ownership, and eventually grew into Principal Product Management roles. That journey gave me something I value deeply: strong systems thinking combined with practical execution.
+      I understand how things work under the hood — and how they need to work for the business.
+      I’m most comfortable in complex environments where architecture, compliance, and product strategy intersect.
+      I’ve led legacy-to-cloud migrations (AWS), helped design API-first platforms, worked on identity and payment systems supporting millions of users, and partnered closely with engineering, compliance, finance, and executive teams to bring clarity to high-risk, high-impact initiatives.
+      What drives me most is turning complexity into structure — translating financial and operational workflows into scalable, production-ready systems.
+      I enjoy building platforms that are not only functional, but resilient, measurable, and aligned with long-term business goals.
+      I do my best work where modernization, regulatory discipline, and execution excellence need to coexist.
+    </div>
+  </div>
+
   <!-- EXPERTISE -->
   <div style="margin-top: 28px;">
-    <div style="font-size: 18px; font-weight: 700; margin-bottom: 14px;">
-      My Expertise Includes
-    </div>
+    <div style="font-size: 18px; font-weight: 700; margin-bottom: 14px;">My Expertise Includes</div>
 
-    <!-- CHUNKS -->
     <div style="display: grid; grid-template-columns: repeat(2, minmax(260px, 1fr)); gap: 14px;">
 
-      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px; background: #fff;">
+      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px;">
         <div style="font-weight: 700;">Enterprise platform strategy &amp; domain modeling</div>
         <div style="margin-top: 6px; color: #374151; line-height: 1.5;">
           Structuring complex business domains into scalable product ecosystems
         </div>
       </div>
 
-      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px; background: #fff;">
+      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px;">
         <div style="font-weight: 700;">API-first and distributed architectures</div>
         <div style="margin-top: 6px; color: #374151; line-height: 1.5;">
           Designing systems that are modular, resilient, and built to evolve
         </div>
       </div>
 
-      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px; background: #fff;">
+      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px;">
         <div style="font-weight: 700;">Cloud migration &amp; modernization (AWS)</div>
         <div style="margin-top: 6px; color: #374151; line-height: 1.5;">
           Leading legacy-to-cloud transformations with long-term scalability in mind
         </div>
       </div>
 
-      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px; background: #fff;">
+      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px;">
         <div style="font-weight: 700;">AI underwriting &amp; financial decision systems</div>
         <div style="margin-top: 6px; color: #374151; line-height: 1.5;">
           Translating risk models and credit logic into production-ready workflows
         </div>
       </div>
 
-      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px; background: #fff;">
+      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px;">
         <div style="font-weight: 700;">Regulatory-aligned product design (PCI, SEC/FINRA)</div>
         <div style="margin-top: 6px; color: #374151; line-height: 1.5;">
           Embedding compliance directly into system architecture and delivery
         </div>
       </div>
 
-      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px; background: #fff;">
+      <div style="padding: 14px 16px; border: 1px solid #E5E7EB; border-radius: 14px;">
         <div style="font-weight: 700;">Executive roadmap governance &amp; KPI visibility</div>
         <div style="margin-top: 6px; color: #374151; line-height: 1.5;">
           Aligning product strategy with measurable business outcomes
