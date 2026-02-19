@@ -1,17 +1,22 @@
 <div style="background:#E8EFEB; padding-bottom:60px; overflow-x:hidden; position:relative;">
 
-  <!-- COVER (behind) -->
+<!-- COVER (dandelion) -->
+<div>
   <div style="
-    position: relative;
-    left: 50%;
-    margin-left: -50%;
-    width: 100%;
+    width: 100vw;
     height: 300px;
-    background-image: url('./assets/cover.jpg');
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    background-image:
+      linear-gradient(rgba(90, 120, 110, 0.45), rgba(90, 120, 110, 0.45)),
+      url('./assets/cover.jpg');
+
     background-size: cover;
     background-position: center;
-    z-index: 0;
-  "></div>
+  ">
+  </div>
+</div>
 
   <!-- WHITE CARD (above) -->
   <div style="
