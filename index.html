@@ -1,17 +1,4 @@
-<!-- COVER (dandelion) -->
-<div>
-<div style="
-  width: 100vw;
-  height: 300px;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  background-image: url('./assets/cover.jpg');
-  background-size: cover;
-  background-position: center;
-"> 
-</div>
-
-<!-- WHITE CARD (overlapping the cover) -->
+<!-- WHITE CARD (layout updated ONLY; content unchanged) -->
 <div style="
   max-width: 1100px;
   margin: -70px auto 0 auto;
@@ -26,17 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 ">
 
-  <!-- TOP ROW: AVATAR + NAME/TITLE + CONTACT -->
-  <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 24px;">
+  <!-- TOP AREA: LEFT (name/title/domains) + RIGHT (avatar + contact) -->
+  <div style="
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+  ">
 
-    <!-- AVATAR -->
-    <div style="flex: 0 0 120px;">
-      <img src="./assets/avatar.jpg" alt="Avatar"
-        style="width: 150px; height: 150px; border-radius: 16px; object-fit: cover;">
-    </div>
-
-    <!-- NAME/TITLE/DOMAINS -->
-    <div style="flex: 1; min-width: 280px;">
+    <!-- LEFT: NAME / TITLE / DOMAINS -->
+    <div style="flex: 1; min-width: 320px;">
       <h1 style="margin: 0 0 6px 0;">Niara (Nia) Mamontova</h1>
       <h2 style="margin: 0 0 6px 0;">Technical Product Manager</h2>
       <h3 style="margin: 0; font-weight: 500; color: #6B7280;">
@@ -44,18 +30,23 @@
       </h3>
     </div>
 
-    <!-- CONTACT (RIGHT, SMALL, GREY) -->
-    <div style="flex: 0 0 260px; text-align: right; color: #6B7280; font-size: 14px; line-height: 1.35;">
-      📍 Irvine, California<br>
-      📞 +1 (814) 852-8918<br>
-      ✉️ niara.mamontova@gmail.com<br>
-      🔗 linkedin.com/in/niaramamontova<br>
+    <!-- RIGHT: AVATAR + CONTACT (stacked) -->
+    <div style="flex: 0 0 260px; text-align: right;">
+      <img src="./assets/avatar.jpg" alt="Avatar"
+        style="width: 150px; height: 150px; border-radius: 16px; object-fit: cover; display: block; margin-left: auto;">
+
+      <div style="margin-top: 10px; color: #6B7280; font-size: 14px; line-height: 1.35;">
+        📍 Irvine, California<br>
+        📞 +1 (814) 852-8918<br>
+        ✉️ niara.mamontova@gmail.com<br>
+        🔗 linkedin.com/in/niaramamontova<br>
+      </div>
     </div>
 
   </div>
 
-  <!-- ABOUT ME -->
-  <div style="margin-top: 22px;">
+  <!-- ABOUT ME (full-width; will NOT wrap around the right column) -->
+  <div style="margin-top: 22px; width: 100%;">
     <div style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">About Me</div>
 
     <div style="line-height: 1.65;">
