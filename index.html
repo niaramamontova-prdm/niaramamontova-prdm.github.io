@@ -1,727 +1,101 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="google-site-verification" content="xphHKePdtc2X5szi-oxGjQRgbUdUOSzCXgPky7wQRw0" />
-  <meta name="google-site-verification" content="p_BJ-XWUzK3xBEmMzttjN9bvgMrfdZvdThnpjqzrni0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.png">
-  <link rel="apple-touch-icon" href="./assets/favicon.png">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Niara Mamontova</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, sans-serif;
+      background: #E8EFEB;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 22px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.10);
+      padding: 56px 48px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 24px;
+      border: 3px solid #E8EFEB;
+    }
+    h1 { font-size: 26px; font-weight: 700; color: #111827; margin-bottom: 6px; }
+    .subtitle { font-size: 15px; color: #6B7280; margin-bottom: 40px; }
+    .btn-group { display: flex; flex-direction: column; gap: 14px; }
+    .btn {
+      display: block;
+      padding: 18px 28px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .btn-pm {
+      background: linear-gradient(135deg, rgba(0,150,255,0.12), rgba(0,200,170,0.12));
+      color: #0F766E;
+      border: 2px solid rgba(15,118,110,0.2);
+    }
+    .btn-pm:hover {
+      background: linear-gradient(135deg, rgba(0,150,255,0.22), rgba(0,200,170,0.22));
+      border-color: #0F766E;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    .btn-tpm {
+      background: linear-gradient(135deg, rgba(0,90,180,0.10), rgba(0,150,220,0.10));
+      color: #1d4ed8;
+      border: 2px solid rgba(29,78,216,0.2);
+    }
+    .btn-tpm:hover {
+      background: linear-gradient(135deg, rgba(0,90,180,0.20), rgba(0,150,220,0.20));
+      border-color: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    .btn-label { font-size: 12px; font-weight: 400; opacity: 0.7; margin-top: 4px; display: block; }
+    .footer-note { margin-top: 32px; font-size: 13px; color: #9CA3AF; }
+    .footer-note a { color: #0F766E; text-decoration: none; }
+  </style>
 </head>
+<body>
+  <div class="card">
+    <img src="./assets/avatar.jpg" alt="Niara Mamontova" class="avatar" />
+    <h1>Niara (Nia) Mamontova</h1>
+    <p class="subtitle">Irvine, California &nbsp;·&nbsp; FinTech · SaaS · Payments · AI Platforms</p>
 
-<body style="margin:0;">
-
-  
-  <!-- PAGE BACKGROUND -->
-  <div style="background:#E8EFEB; min-height:100vh; padding-bottom:60px; overflow-x:hidden;">
-
-    <!-- COVER -->
-    <div style="
-      width:100vw;
-      height:300px;
-      background-image:url('./assets/cover.jpg');
-      background-size:cover;
-      background-position:center;
-    "></div>
-
-    <!-- WHITE CARD (overlaps cover) -->
-    <div style="
-      max-width:1100px;
-      margin:-90px auto 40px auto;
-      background:#ffffff;
-      border-radius:18px;
-      padding:32px;
-      box-shadow:0 12px 30px rgba(0,0,0,0.10);
-      font-family:Inter, sans-serif;
-      position:relative;
-      z-index:2;
-    ">
-
-      <!-- FLOAT WRAP (enables text wrap around photo) -->
-      <div style="overflow:hidden;">
-
-        <!-- RIGHT: PHOTO + CONTACT (FLOAT) -->
-        <div style="float:right; width:260px; margin:40px 0 20px 30px;">
-          <img src="./assets/avatar.jpg" style="
-            width:220px;
-            height:220px;
-            border-radius:18px;
-            object-fit:cover;
-            display:block;
-            margin:0 0 14px 0;
-          ">
-
-     <div style="color:#6B7280; font-size:14px; line-height:1.9;">
-
-  📍 Irvine, California<br>
-  📞 +1 (814) 852-8918<br>
-       
-✉️ <a href="mailto:niara.mamontova@gmail.com"
-     style="color:#0F766E; text-decoration:none; font-weight:500;"
-     onmouseover="this.style.color='#0EA5A4'"
-     onmouseout="this.style.color='#0F766E'">
-     niara.mamontova@gmail.com
-</a><br>
-
-       
-🔗 <a href="https://www.linkedin.com/in/niaramamontova/" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   style="color:#0F766E; text-decoration:none; font-weight:500;"
-    onmouseover="this.style.color='#0EA5A4'"
-    onmouseout="this.style.color='#0F766E'">
-   LinkedIn Profile
-</a><br>
-
-       
-📄 <a href="./assets/resume.pdf"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color:#0F766E; text-decoration:none; font-weight:500;"
-     onmouseover="this.style.color='#0EA5A4'"
-     onmouseout="this.style.color='#0F766E'">
-     Download Resume
-</a><br>
-
-📊 <a href="./assets/portfolio.pdf"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color:#0F766E; text-decoration:none; font-weight:500;"
-     onmouseover="this.style.color='#0EA5A4'"
-     onmouseout="this.style.color='#0F766E'">
-     Portfolio (work samples)
-</a>
-
-</div>
-
-
-        </div>
-
-        <!-- LEFT: TITLE + ABOUT (WRAPS AROUND FLOAT) -->
-        <div>
-          <h1 style="margin:0; font-size:30px;">Niara (Nia) Mamontova</h1>
-          <h2 style="margin:6px 0; font-size:24px;"> Product Manager / Product Owner / Delivery Lead </h2>
-          <div style="color:#6B7280; margin-bottom:20px; font-size:20px;">
-           Enterprise SaaS • FinTech • Identity • Payments • AI Platforms
-          </div>
-
-
-          <h2 style="
-  font-size:22px;
-  font-weight:700;
-  margin-top:50px;
-  margin-bottom:24px;
-  color:#111827;
-">
-  About Me
-</h2>
-
-
-          <p style="line-height:1.65; margin:0 0 12px 0; text-align:justify;">
-Hi, I’m Niara – a Technical Product Manager and Product Owner with 15+ years in software delivery, including 10+ years building and modernizing platforms across fintech, SaaS, AI underwriting, and regulated environments.
-
-You can view my professional profile on 
-<a href="https://www.linkedin.com/in/niaramamontova/" target="_blank"
-    style="color:#0F766E; text-decoration:none; font-weight:500;"
-     onmouseover="this.style.color='#0EA5A4'"
-     onmouseout="this.style.color='#0F766E'">
-LinkedIn
-</a>.
-</p>
-
-         
-<p style="line-height:1.65; margin:0 0 12px 0; text-align:justify;">
-I started my career as a Business Systems Analyst and grew into Product and Principal Product roles. This background gives me strong systems thinking combined with hands-on execution: I understand how systems work under the hood and how they need to deliver value for the business.
-</p>
-
-<p style="line-height:1.65; margin:0 0 12px 0; text-align:justify;">
-I specialize in complex environments where product, architecture, and compliance intersect. I’ve led legacy-to-cloud migrations (AWS), designed API-first platforms, and delivered identity and payment systems supporting millions of users. I work closely with engineering, risk, and operations teams to translate complex initiatives into scalable, production-ready solutions.
-</p>
-
-<p style="line-height:1.65; margin:0; text-align:justify;">
-What drives me most is turning complexity into structure, translating financial and operational workflows into systems that are reliable, measurable, and aligned with long-term business goals. I do my best work where modernization, regulatory discipline, and execution excellence need to coexist.
-</p>
-        </div>
-
-      </div>
-      <!-- END FLOAT WRAP -->
-
-      <div style="clear:both;"></div>
-
-
-<!-- RECOMMENDATIONS -->
-<div style="margin-top:50px;">
-
-  
-  <h2 style="
-    font-size:24px;
-    font-weight:700;
-    margin-bottom:24px;
-    color:#111827;
-  ">
-    Recommendations
-  </h2>
-
-  <div style="
-  display:flex;
-  flex-direction:column;
-  align-items:stretch;
-  gap:16px
-">
-    
-
-    <!-- Recommendation 1 -->
-    <div style="  
-      box-sizing:border-box;
-    padding:10px 20px;
-      border-radius:20px;
-
-      background: linear-gradient(135deg, rgba(0,150,255,0.10), rgba(0,200,170,0.10));
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    ">
-      <div style="font-size:18px; font-weight:700; color:#111827;">
-        Tara Chklovski
-      </div>
-      <div style="font-size:15px; color:#6B7280; margin-top:2px; margin-bottom:6px;">
-        Founder & CEO, Technovation
-      </div>
-
-         <p style="font-style:italic; color:#374151; font-size:15px; font-weight:400; line-height:1.5; margin:0 0 4px 0;">
-        “Niara demonstrated strong analytical and organizational skills, excellent communication
-        with both technical and non-technical stakeholders, and was instrumental in ensuring
-        that requirements were translated into effective software solutions.”
-      </p>
-
-      
-     <div style="margin-top:4px; text-align:right;">
-  <a href="./assets/recommendation-technovation.pdf"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="
-       color:#0F766E;
-       text-decoration:none;
-       font-size:14px;
-       font-weight:600;
-       transition: all 0.2s ease;
-     "
-     onmouseover="this.style.color='#0EA5A4'; this.style.textDecoration='underline';"
-     onmouseout="this.style.color='#0F766E'; this.style.textDecoration='none';">
-    View Letter →
-  </a>
-</div>
-
-      
+    <div class="btn-group">
+      <a href="./prdm/" class="btn btn-pm">
+        Product Manager / Product Owner
+        <span class="btn-label">Enterprise SaaS · Identity · Payments · AI</span>
+      </a>
+      <a href="./tpm/" class="btn btn-tpm">
+        Technical Program Manager
+        <span class="btn-label">Cross-functional delivery · Cloud · Regulated environments</span>
+      </a>
     </div>
 
-    <!-- Recommendation 2 -->
-    <div style="
-      
-      box-sizing:border-box;
-    padding:10px 20px;
-      border-radius:20px;
-      background: linear-gradient(135deg, rgba(0,160,255,0.10), rgba(0,220,170,0.10));
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    ">
-      <div style="font-size:18px; font-weight:700; color:#111827;">
-        Dana Ross
-      </div>
-      <div style="font-size:15px; color:#6B7280; margin-top:2px; margin-bottom:6px;">
-        Capital Group
-      </div>
-
-      <p style="font-style:italic; color:#374151; font-size:15px; font-weight:400; line-height:1.5; margin:0 0 4px 0;">
-        “Nia excelled in requirements elicitation, process mapping, and stakeholder facilitation...
-        Her ability to create detailed BRDs, FRDs, and before-and-after process maps significantly
-        improved our ability to deliver accurate, efficient system changes.”
-      </p>
-
-
-   <div style="margin-top:4px; text-align:right;">
-  <a href="./assets/recommendation-capital-group.pdf"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="
-       color:#0F766E;
-       text-decoration:none;
-       font-size:14px;
-       font-weight:600;
-       transition: all 0.2s ease;
-     "
-     onmouseover="this.style.color='#0EA5A4'; this.style.textDecoration='underline';"
-     onmouseout="this.style.color='#0F766E'; this.style.textDecoration='none';">
-    View Letter →
-  </a>
-</div>
-
-      
-    </div>
-    <!-- Recommendation 3 -->
-    <div style="
-
-      box-sizing:border-box;
-padding:10px 20px;
-      border-radius:20px;
-      background: linear-gradient(135deg, rgba(0,140,255,0.10), rgba(0,200,120,0.10));
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    ">
-      <div style="font-size:18px; font-weight:700; color:#111827;">
-        Dino Morales
-      </div>
-      <div style="font-size:15px; color:#6B7280; margin-top:2px; margin-bottom:6px;">
-        Vice President, On-Line Residential
-      </div>
-
-      <p style="font-style:italic; color:#374151; font-size:15px; font-weight:400; line-height:1.5; margin:0 0 4px 0;">
-        “As a Product Manager, Niara Mamontova showcased remarkable leadership skills... consistently delivered results...
-        Her attention to detail and commitment to optimizing our project management system
-        significantly contributed to our team's success.”
-      </p>
-
-       <div style="margin-top:4px; text-align:right;">
-  <a href="./assets/recommendation-olr.pdf"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="
-       color:#0F766E;
-       text-decoration:none;
-       font-size:14px;
-       font-weight:600;
-       transition: all 0.2s ease;
-     "
-     onmouseover="this.style.color='#0EA5A4'; this.style.textDecoration='underline';"
-     onmouseout="this.style.color='#0F766E'; this.style.textDecoration='none';">
-    View Letter →
-  </a>
-</div>
-      
-    </div>
-    
-   
+    <p class="footer-note">
+      <a href="https://www.linkedin.com/in/niaramamontova/" target="_blank">LinkedIn</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:niara.mamontova@gmail.com">niara.mamontova@gmail.com</a>
+    </p>
   </div>
-</div>
-
-<!-- EXPERTISE -->
-<div style="margin-top:50px;">
-  <h2 style="
-    font-size:24px;
-    font-weight:700;
-    margin-bottom:20px;
-    color:#111827;
-  ">
-    My Expertise Includes
-  </h2>
-
-  <div style="display:grid; grid-template-columns:repeat(2, minmax(260px, 1fr)); gap:18px;">
-
-        <!-- CARD 1 -->
-        <div style="
-          padding:18px;
-          border:2px solid;
-          border-image: linear-gradient(135deg, #0096FF, #00C896) 1;
-          border-radius:16px;
-          box-shadow:0 6px 18px rgba(0,0,0,0.06);
-        ">
-          <div style="font-weight:700;">Commerce, Payments and Identity</div>
-          <div style="margin-top:8px; color:#374151; line-height:1.5;">
-            <ul style="padding-left:18px; margin:0;">
-              <li>Checkout optimization and payment performance improvement</li>
-              <li>End-to-end billing lifecycle ownership</li>
-              <li>Stripe, PayPal, ACH integrations</li>
-              <li>Owned IAM and payments roadmap, including user management platform (account.namecheap.com)</li>
-              <li>Led development of centralized user account system enabling authentication, profile, and access management</li>
-              <li>Transitioned legacy services to microservices architecture</li>
-              <li>Redesigned 2FA workflows and authentication logic</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CARD 2 -->
-        <div style="
-          padding:18px;
-          border:2px solid;
-          border-image: linear-gradient(135deg, #0096FF, #00C896) 1;
-          border-radius:16px;
-          box-shadow:0 6px 18px rgba(0,0,0,0.06);
-        ">
-          <div style="font-weight:700;">Enterprise Platform Architecture</div>
-          <div style="margin-top:8px; color:#374151; line-height:1.5;">
-            <ul style="padding-left:18px; margin:0;">
-              <li>Enterprise platform strategy and domain modeling</li>
-              <li>Structuring complex business domains into scalable ecosystems</li>
-              <li>API-first and multi-tenant SaaS architectures</li>
-              <li>ERP / CRM modernization</li>
-              <li>Cloud migration and legacy-to-AWS transformation</li>
-              <li>Regulated fintech environments (PCI, SEC/FINRA)</li>
-              <li>Compliance embedded into architecture and delivery</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CARD 3 -->
-        <div style="
-          padding:18px;
-          border:2px solid;
-          border-image: linear-gradient(135deg, #0096FF, #00C896) 1;
-          border-radius:16px;
-          box-shadow:0 6px 18px rgba(0,0,0,0.06);
-        ">
-          <div style="font-weight:700;">AI and Financial Decision Systems</div>
-          <div style="margin-top:8px; color:#374151; line-height:1.5;">
-            <ul style="padding-left:18px; margin:0;">
-              <li>AI underwriting and credit decision workflows</li>
-              <li>Translating risk models into production-ready systems</li>
-              <li>Financial decision engine integration</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CARD 4 -->
-        <div style="
-          padding:18px;
-          border:2px solid;
-          border-image: linear-gradient(135deg, #0096FF, #00C896) 1;
-          border-radius:16px;
-          box-shadow:0 6px 18px rgba(0,0,0,0.06);
-        ">
-          <div style="font-weight:700;">Execution, Governance and Product Ownership</div>
-          <div style="margin-top:8px; color:#374151; line-height:1.5;">
-            <ul style="padding-left:18px; margin:0;">
-              <li>Multi-year roadmap ownership and executive governance</li>
-              <li>Backlog strategy and PI planning</li>
-              <li>UAT leadership and release coordination</li>
-              <li>KPI dashboards and executive visibility</li>
-              <li>SLA monitoring and incident governance</li>
-              <li>Cross-functional alignment</li>
-              <li>Aligning product strategy with measurable outcomes</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- CASE STUDIES - FULL CONTENT 3D TILES -->
-<div style="margin-top:50px;">
-
- 
-<h2 style="
-  font-size:24px;
-  font-weight:700;
-  margin-bottom:32px;
-  color:#111827;
-">
-  Case Studies
-</h2>
-  <div style="
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-      gap:35px;
-  ">
-
-    <!-- NAMECHEAP -->
-    <div style="
-        padding:35px;
-        border-radius:22px;
-        background: linear-gradient(135deg, rgba(0,150,255,0.15), rgba(0,200,170,0.15));
-        backdrop-filter: blur(14px);
-        box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-        transition: all 0.35s ease;
-    "
-    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 28px 60px rgba(0,0,0,0.18)'"
-    onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 18px 40px rgba(0,0,0,0.12)'">
-
-      <h3>Namecheap — IAM and Payments Modernization (11M+ Users)</h3>
-             
-<p>
-  <strong>Website:</strong>
-  <a href="https://www.namecheap.com"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color:#0F766E; text-decoration:none; font-weight:500;"
-     onmouseover="this.style.color='#0EA5A4'"
-     onmouseout="this.style.color='#0F766E'">
-    https://www.namecheap.com
-  </a>
-</p>
-
-      <p><strong>Context:</strong> Global SaaS platform generating ~$300M annually with high-volume international checkout traffic.</p>
-
-      <p><strong>Challenge:</strong> Legacy authentication and checkout systems caused login instability, payment drop-offs, and operational risk in high-volume global transactions.</p>
-
-      <p><strong>What I Led:</strong></p>
-      <ul>
-<li>Owned modernization strategy for user management, pricing configuration, and payment services</li>
-<li>Led development of centralized account management capabilities supporting authentication, profile, and access workflows</li>
-<li>Drove redesign of authentication, 2FA, and account management experiences across web and mobile applications</li>
-<li>Delivered pricing and checkout enhancements including subscription renewals, promotions, and add-on product configuration</li>
-<li>Led incident governance and reliability improvements using Kibana monitoring to strengthen SLA adherence and reduce downtime</li>
-      </ul>
-
-      <p><strong>Work Delivered:</strong></p>
-      <ul>
-        <li>User management and account platform supporting 11M+ users</li>
-        <li>Modernized authentication and payment services architecture</li>
-        <li>PCI-compliant global checkout and subscription renewal workflows</li>
-        <li>Production monitoring and incident governance framework aligned to SLA targets</li>
-      </ul>
-
-      <p><strong>Impact:</strong> Improved authentication reliability by 30%, reduced payment failure rates by 18%, decreased production downtime, and significantly strengthened the platform’s global security and compliance posture.</p>
-
-    </div>
-
-
-    <!-- ONLINE RESIDENTIAL -->
-    <div style="
-        padding:35px;
-        border-radius:22px;
-        background: linear-gradient(135deg, rgba(0,170,255,0.15), rgba(0,220,140,0.15));
-        backdrop-filter: blur(14px);
-        box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-        transition: all 0.35s ease;
-    "
-    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 28px 60px rgba(0,0,0,0.18)'"
-    onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 18px 40px rgba(0,0,0,0.12)'">
-
-      <h3>Online Residential — ERP + CRM + Multi-Tenant Billing Platform</h3>
- 
-<p>
-  <strong>ERP:</strong>
-  <a href="https://www.olr.com"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color:#0F766E; text-decoration:none; font-weight:500;"
-     onmouseover="this.style.color='#0EA5A4'"
-     onmouseout="this.style.color='#0F766E'">
-    https://www.olr.com
-  </a><br>
-
-  <strong>CRM:</strong>
-  <a href="https://www.linecity.com"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color:#0F766E; text-decoration:none; font-weight:500;"
-     onmouseover="this.style.color='#0EA5A4'"
-     onmouseout="this.style.color='#0F766E'">
-    https://www.linecity.com
-  </a>
-</p>
-      
-
-      <p><strong>Context:</strong> $1.2M modernization initiative across B2B/B2C SaaS ecosystem.</p>
-
-      <p><strong>Challenge:</strong> Fragmented CRM and billing systems limited scalability, subscription growth, and financial transparency.</p>
-
-      <p><strong>What I Led:</strong></p>
-      <ul>
-        <li>Defined product vision and roadmap for ERP and CRM modernization across web and mobile applications</li>
-        <li>Modernized the ERP platform (OLR), leading migration from legacy architecture to a scalable SaaS solution</li>
-        <li>Built the CRM platform (Linecity) from scratch, defining product architecture, workflows, and core data model</li>
-        <li>Designed multi-tenant billing, subscription pricing, and quote-to-cash workflows</li>
-        <li>Integrated payment systems including Stripe, PayPal, and ACH</li>
-      </ul>
-
-      <p><strong>Work Delivered:</strong></p>
-      <ul>
-        <li>Modernized ERP SaaS platform for B2B/B2C operations</li>
-        <li>CRM platform built from scratch for real estate workflows</li>
-        <li>Multi-tenant subscription billing and pricing infrastructure</li>
-        <li>Integrated quote-to-cash and payment processing ecosystem</li>
-      </ul>
-
-      <p><strong>Impact:</strong> Increased ROI by 25%, improved subscription scalability, strengthened financial reporting transparency, and enabled flexible global payment capabilities across B2B and B2C operations.</p>
-
-    </div>
-
-
-    <!-- DXC / CAPITAL GROUP -->
-    <div style="
-        padding:35px;
-        border-radius:22px;
-        background: linear-gradient(135deg, rgba(0,140,255,0.15), rgba(0,200,120,0.15));
-        backdrop-filter: blur(14px);
-        box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-        transition: all 0.35s ease;
-    "
-    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 28px 60px rgba(0,0,0,0.18)'"
-    onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 18px 40px rgba(0,0,0,0.12)'">
-
-      <h3>DXC Technology → Capital Group — SEC/FINRA-Regulated Investment Platform</h3>
-
-<p>
-  <strong>Client:</strong>
-  <a href="https://www.capitalgroup.com"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color:#0F766E; text-decoration:none; font-weight:500;"
-     onmouseover="this.style.color='#0EA5A4'"
-     onmouseout="this.style.color='#0F766E'">
-    https://www.capitalgroup.com
-  </a>
-</p>
-      
-
-      <p><strong>Context:</strong> Enterprise servicing platform operating in a SEC/FINRA-regulated investment environment.</p>
-
-      <p><strong>Challenge:</strong> Legacy servicing architecture limited audit readiness, resilience, and regulatory traceability.</p>
-
-      <p><strong>What I Led:</strong></p>
-      <ul>
-        <li>Owned $1M product roadmap</li>
-        <li>Led AWS migration of servicing systems</li>
-        <li>Built executive KPI dashboards</li>
-        <li>Strengthened compliance traceability workflows</li>
-      </ul>
-
-      <p><strong>Work Delivered:</strong></p>
-      <ul>
-        <li>Modernized SEC/FINRA-regulated investment servicing platform</li>
-        <li>Cloud-migrated servicing infrastructure (AWS)</li>
-        <li>Executive KPI and compliance dashboards</li>
-        <li>Audit-traceable governance workflows</li>
-      </ul>
-
-      <p><strong>Impact:</strong> Enhanced audit readiness, improved operational resilience, and increased regulatory transparency across servicing workflows.</p>
-
-    </div>
-
-
-    <!-- PLAT.AI -->
-    <div style="
-        padding:35px;
-        border-radius:22px;
-        background: linear-gradient(135deg, rgba(0,160,255,0.15), rgba(0,220,170,0.15));
-        backdrop-filter: blur(14px);
-        box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-        transition: all 0.35s ease;
-    "
-    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 28px 60px rgba(0,0,0,0.18)'"
-    onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 18px 40px rgba(0,0,0,0.12)'">
-
-      <h3>Plat.AI — AI Underwriting and Credit Decisioning</h3>
-
-<p>
-  <strong>Website:</strong>
-  <a href="https://www.plat.ai"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color:#0F766E; text-decoration:none; font-weight:500;"
-     onmouseover="this.style.color='#0EA5A4'"
-     onmouseout="this.style.color='#0F766E'">
-    https://www.plat.ai
-  </a>
-</p>
-      
-
-      <p><strong>Context:</strong> AI-powered lending platform automating credit decisioning for financial institutions.</p>
-
-      <p><strong>Challenge:</strong> Align automated underwriting logic with scalable architecture and regulatory compliance requirements.</p>
-
-      <p><strong>What I Led:</strong></p>
-      <ul>
-        <li>Defined multi-step decisioning workflows</li>
-        <li>Designed API integrations with financial institutions and credit bureaus</li>
-        <li>Managed regulated data exchange pipelines</li>
-        <li>Stabilized automated approval processes</li>
-      </ul>
-
-      <p><strong>Work Delivered:</strong></p>
-      <ul>
-        <li>AI-driven underwriting and credit decisioning engine</li>
-        <li>Multi-step automated approval architecture</li>
-        <li>Financial institution and bureau API integration layer</li>
-        <li>Compliance-aligned regulated data exchange framework</li>
-      </ul>
-
-      <p><strong>Impact:</strong> Improved automated decision consistency, enabled scalable compliance-aligned underwriting, and reduced operational friction across regulated credit approval workflows.</p>
-
-    </div>
-
-</div>
-
-
-<!-- EDUCATION & CERTIFICATIONS -->
-<div style="margin-top:50px;">
-
-  
-<h2 style="
-  font-size:24px;
-  font-weight:700;
-  margin-bottom:32px;
-  color:#111827;
-">
-  Education & Certifications
-</h2>
-  <div style="
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap:30px;
-  ">
-
-    <!-- EDUCATION BLOCK -->
-    <div style="
-        padding:30px;
-        border-radius:22px;
-        background: linear-gradient(135deg, rgba(0,150,255,0.10), rgba(0,200,170,0.10));
-        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    ">
-
-      <h3 style="margin-bottom:20px;">Education</h3>
-
-<div style="font-size:15px; font-style:italic; font-weight:400; color:#6B7280; margin-bottom:15px;">
-  U.S. equivalency verified by World Education Services (WES)
-</div>
-
-      <div style="margin-bottom:22px;">
-        <div style="font-size:16px; font-weight:700; color:#111827;">
-          M.S. Computer Science
-        </div>
-        <div style="font-size:14px; color:#6B7280; margin-top:4px;">
-          Ukrainian Engineering Pedagogical Academy
-        </div>
-      </div>
-
-      <div>
-        <div style="font-size:16px; font-weight:700; color:#111827;">
-          M.S. International Business Management
-        </div>
-        <div style="font-size:14px; color:#6B7280; margin-top:4px;">
-          Taurida National V.I. Vernadsky University
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CERTIFICATIONS BLOCK -->
-    <div style="
-        padding:30px;
-        border-radius:22px;
-        background: linear-gradient(135deg, rgba(0,160,255,0.10), rgba(0,220,170,0.10));
-        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    ">
-
-      <h3 style="margin-bottom:20px;">Certifications</h3>
-
-      <ul style="margin:0; padding-left:16px; line-height:1.8;">
-          <li>Project Management Professional (PMP), PMI </li>
-        <li>CBAP — Certified Business Analysis Professional</li>
-        <li>PSPO I — Professional Scrum Product Owner</li>
-        <li>PSM I — Professional Scrum Master</li>
-        <li>Atlassian Agile (Jira)</li>
-      </ul>
-
-
-      
-    </div>
-
-  </div>
-
-</div>
-
-
-
-        </div>
-
-      </div>
-    </div>
-
-
+</body>
+</html>
