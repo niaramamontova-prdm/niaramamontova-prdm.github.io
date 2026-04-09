@@ -58,11 +58,8 @@
             📍 Irvine, California<br>
             📞 +1 (814) 852-8918<br>
 
-            ✉️ <a href="mailto:niara.mamontova@gmail.com"
-                 style="color:#0F766E; text-decoration:none; font-weight:500;"
-                 onmouseover="this.style.color='#0EA5A4'"
-                 onmouseout="this.style.color='#0F766E'">
-                 niara.mamontova@gmail.com
+            ✉️ <a href="/cdn-cgi/l/email-protection#d0beb9b1a2b1febdb1bdbfbea4bfa6b190b7bdb1b9bcfeb3bfbd" style="color:#0F766E; text-decoration:none; font-weight:500;" onmouseover="this.style.color='#0EA5A4'" onmouseout="this.style.color='#0F766E'">
+                 <span class="__cf_email__" data-cfemail="ed83848c9f8cc3808c80828399829b8cad8a808c8481c38e8280">[email&#160;protected]</span>
             </a><br>
 
             🔗 <a href="https://www.linkedin.com/in/niaramamontova/"
@@ -451,13 +448,13 @@
     <div style="background:#fff; border-radius:20px; padding:32px;
       max-width:480px; width:90%; box-shadow:0 24px 60px rgba(0,0,0,0.25);
       font-family:Inter,sans-serif; position:relative;">
-      <div style="font-size:18px; font-weight:700; color:#111827; margin-bottom:6px;">🎵 My hobby </div>
+      <div style="font-size:18px; font-weight:700; color:#111827; margin-bottom:6px;">🎵 A little something</div>
       <div style="font-size:14px; color:#6B7280; margin-bottom:18px;">You found it 🤍</div>
       <video controls style="width:100%; border-radius:12px;">
         <source src="../assets/song.mp4" type="video/mp4">
       </video>
       <div style="text-align:right; margin-top:16px;">
-        <span onclick="document.getElementById('song-modal').style.display='none'"
+        <span onclick="document.getElementById('song-modal').style.display='none'; document.querySelector('#song-modal video').pause(); document.querySelector('#song-modal video').currentTime=0;"
           style="font-size:13px; color:#0F766E; cursor:pointer; font-weight:600;">Close ✕</span>
       </div>
     </div>
@@ -465,9 +462,12 @@
 
   <script>
     document.getElementById('song-modal').addEventListener('click', function(e) {
-      if (e.target === this) this.style.display = 'none';
+      if (e.target === this) {
+        this.style.display = 'none';
+        this.querySelector('video').pause();
+        this.querySelector('video').currentTime = 0;
+      }
     });
   </script>
 
-</body>
-</html>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode
