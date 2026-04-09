@@ -171,6 +171,7 @@
               </a>
             </div>
           </div>
+
           <!-- Rec 3 -->
           <div style="box-sizing:border-box; padding:10px 20px; border-radius:20px;
             background:linear-gradient(135deg, rgba(0,160,255,0.10), rgba(0,220,170,0.10));
@@ -189,6 +190,7 @@
               </a>
             </div>
           </div>
+
           <!-- Rec 4 -->
           <div style="box-sizing:border-box; padding:10px 20px; border-radius:20px;
             background:linear-gradient(135deg, rgba(0,160,255,0.10), rgba(0,220,170,0.10));
@@ -425,7 +427,10 @@
             box-shadow:0 12px 30px rgba(0,0,0,0.08);">
             <h3 style="margin-bottom:20px;">Certifications</h3>
             <ul style="margin:0; padding-left:16px; line-height:1.8;">
-              <li>Project Management Professional (PMP), PMI</li>
+              <li>Project Management Professional (PMP)<span
+                  onclick="document.getElementById('song-modal').style.display='flex'"
+                  style="color:inherit; cursor:default; user-select:none;"
+                  title="">,</span> PMI</li>
               <li>CBAP — Certified Business Analysis Professional</li>
               <li>PSPO I — Professional Scrum Product Owner</li>
               <li>PSM I — Professional Scrum Master</li>
@@ -438,6 +443,31 @@
 
     </div>
   </div>
+
+  <!-- 🎵 Easter egg modal -->
+  <div id="song-modal" style="display:none; position:fixed; inset:0; z-index:999;
+    background:rgba(0,0,0,0.55); backdrop-filter:blur(6px);
+    align-items:center; justify-content:center;">
+    <div style="background:#fff; border-radius:20px; padding:32px;
+      max-width:480px; width:90%; box-shadow:0 24px 60px rgba(0,0,0,0.25);
+      font-family:Inter,sans-serif; position:relative;">
+      <div style="font-size:18px; font-weight:700; color:#111827; margin-bottom:6px;">🎵 A little something</div>
+      <div style="font-size:14px; color:#6B7280; margin-bottom:18px;">You found it 🤍</div>
+      <video controls style="width:100%; border-radius:12px;">
+        <source src="../assets/song.mp4" type="video/mp4">
+      </video>
+      <div style="text-align:right; margin-top:16px;">
+        <span onclick="document.getElementById('song-modal').style.display='none'"
+          style="font-size:13px; color:#0F766E; cursor:pointer; font-weight:600;">Close ✕</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('song-modal').addEventListener('click', function(e) {
+      if (e.target === this) this.style.display = 'none';
+    });
+  </script>
 
 </body>
 </html>
